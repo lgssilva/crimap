@@ -118,7 +118,7 @@ export function TherapiesSection() {
       <span className="material-symbols-outlined text-[16px]">medical_services</span>
                   Especialidades Terapêuticas
                 </div>
-      <h2 className="font-headline-xl text-headline-xl text-ink-deep font-bold tracking-tight">Cuidado transdisciplinar&nbsp;estruturado</h2>
+      <h2 className="font-headline-xl text-[28px] leading-9 md:text-headline-xl text-ink-deep font-bold tracking-tight min-w-0 [overflow-wrap:anywhere]">Cuidado transdisciplinar estruturado</h2>
       <p className="font-body-lg text-body-lg text-crimap-gray">
                   Salas equipadas com tecnologia e recursos lúdicos pensados para a infância e juventude, orientadas por evidências científicas e&nbsp;afeto.
                 </p>

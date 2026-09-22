@@ -51,12 +51,9 @@ export function MobileDrawer() {
         data-drawer-panel
         className="absolute right-0 top-0 bottom-0 w-[min(100%,20.5rem)] bg-white flex flex-col translate-x-full transition-transform duration-300 ease-in-out"
       >
-        <div className="flex items-center justify-between px-6 h-[72px] shrink-0">
-          <span className="font-headline-sm text-[15px] tracking-[0.14em] uppercase text-ink-deep">
-            CRIMAP
-          </span>
+        <div className="flex items-center justify-end px-4 pt-2 shrink-0">
           <button
-            className="min-w-[48px] min-h-[48px] -mr-2 flex items-center justify-center text-crimap-gray"
+            className="min-w-[48px] min-h-[48px] flex items-center justify-center text-crimap-gray"
             aria-label="Fechar menu"
             type="button"
             onClick={closeDrawer}
@@ -66,7 +63,7 @@ export function MobileDrawer() {
         </div>
 
         <div className="flex-1 overflow-y-auto px-6 flex flex-col">
-          <nav className="flex flex-col pb-2" aria-label="Navegação principal">
+          <nav className="flex flex-col" aria-label="Navegação principal">
             {links.map((link) => (
               <a
                 key={link.href}
@@ -79,13 +76,13 @@ export function MobileDrawer() {
             ))}
           </nav>
 
-          <div className="mt-4 mb-6 h-px bg-soft-line" />
+          <div className="mt-2 mb-4 h-px bg-soft-line" />
 
-          <section className="pb-8" aria-label="Contato">
-            <p className="font-label-md text-[11px] font-semibold tracking-[0.14em] uppercase text-crimap-gray mb-5">
+          <section className="pb-4" aria-label="Contato">
+            <p className="font-label-md text-[11px] font-semibold tracking-[0.14em] uppercase text-crimap-gray mb-4">
               Contato
             </p>
-            <dl className="flex flex-col gap-5">
+            <dl className="flex flex-col gap-4">
               <div>
                 <dt className="font-label-md text-[11px] uppercase tracking-[0.08em] text-crimap-gray mb-1">
                   Endereço

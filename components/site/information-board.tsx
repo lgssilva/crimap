@@ -73,14 +73,14 @@ export function InformationBoard() {
       {/* Main Need Dropdown / Selection */}
       <div className="flex flex-col gap-2">
       <label className="font-label-md text-label-md font-bold text-ink-deep" htmlFor="primary-need">Qual é a principal queixa ou necessidade atual?</label>
-      <select className="w-full h-11 px-4 rounded-lg bg-surface-pure border border-soft-line text-ink-deep focus:outline-none focus:border-connection-blue transition-colors font-body-md" id="primary-need">
-      <option value="fala">Atraso na fala / Dificuldade de comunicação</option>
-      <option value="motor">Desenvolvimento motor / Marcha / Postura</option>
-      <option value="sensorial">Integração sensorial / Seletividade alimentar</option>
-      <option value="comportamento">Comportamento / Regulação emocional / Ansiedade</option>
-      <option value="aprendizagem">Dificuldades escolares / Alfabetização / Foco</option>
-      <option value="avaliacao">Avaliação Neuropediátrica Completa</option>
-      <option value="duvida">Ainda não sei ao certo, gostaria de orientação</option>
+      <select className="w-full min-h-11 h-auto py-2.5 pl-3 pr-8 rounded-lg bg-surface-pure border border-soft-line text-ink-deep text-[13px] sm:text-[15px] leading-snug focus:outline-none focus:border-connection-blue transition-colors font-body-md" id="primary-need">
+      <option className="text-[15px] py-2" value="fala">Atraso na fala / Dificuldade de comunicação</option>
+      <option className="text-[15px] py-2" value="motor">Desenvolvimento motor / Marcha / Postura</option>
+      <option className="text-[15px] py-2" value="sensorial">Integração sensorial / Seletividade alimentar</option>
+      <option className="text-[15px] py-2" value="comportamento">Comportamento / Regulação emocional / Ansiedade</option>
+      <option className="text-[15px] py-2" value="aprendizagem">Dificuldades escolares / Alfabetização / Foco</option>
+      <option className="text-[15px] py-2" value="avaliacao">Avaliação Neuropediátrica Completa</option>
+      <option className="text-[15px] py-2" value="duvida">Ainda não sei ao certo, gostaria de orientação</option>
       </select>
       </div>
       {/* Notes / Message */}
@@ -95,7 +95,8 @@ export function InformationBoard() {
                     Solicitar Contato da Recepção&nbsp;Clínica
                   </button>
       <p className="font-label-sm text-label-sm text-center text-crimap-gray">
-                    Preferência de contato imediato? <a className="text-connection-blue underline font-semibold" href="https://wa.me/5521988451234" rel="noopener noreferrer" target="_blank">Chame diretamente no WhatsApp&nbsp;aqui</a>.
+                    Preferência de contato imediato?<br />
+                    <a className="text-connection-blue underline font-semibold" href="https://wa.me/5521988451234" rel="noopener noreferrer" target="_blank">Chame diretamente no WhatsApp aqui.</a>
                   </p>
       </div>
       {/* Success Alert Placeholder */}

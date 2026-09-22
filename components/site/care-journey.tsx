@@ -5,12 +5,12 @@ export function CareJourney() {
       <section className="w-full bg-canvas-clinical py-20 px-5 md:px-6 lg:px-12 border-b border-soft-line" id="como-funciona">
       <div className="reveal max-w-[1360px] mx-auto flex flex-col gap-16">
       {/* Section Header */}
-      <div className="flex flex-col items-center text-center max-w-2xl mx-auto gap-3">
+      <div className="flex flex-col items-start text-left max-w-2xl gap-3">
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-connection-blue/10 text-connection-blue font-label-md font-semibold">
       <span className="material-symbols-outlined text-[16px]">linear_scale</span>
                 A Jornada de Cuidado
               </div>
-      <h2 className="font-headline-xl text-headline-xl text-ink-deep font-bold tracking-tight">O que esperar da sua primeira&nbsp;visita</h2>
+      <h2 className="font-headline-xl text-headline-xl text-ink-deep font-bold tracking-tight min-w-0">O que esperar da sua primeira visita</h2>
       <p className="font-body-lg text-body-lg text-crimap-gray">
                 Um percurso transparente, sem pressa e estruturado para que sua família sinta segurança desde o primeiro contato no&nbsp;Downtown.
               </p>

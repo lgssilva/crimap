@@ -83,14 +83,14 @@ export function StructureSection() {
       {/* Secondary Facility & Comfort Features: 2 Complementary Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
       {/* Facility Feature 1: Downtown & Parking */}
-      <div className="p-7 rounded-2xl bg-surface-pure border border-soft-line flex flex-col sm:flex-row items-center gap-6 shadow-sm">
-      <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden flex-shrink-0 bg-canvas-clinical border border-soft-line">
+      <div className="rounded-2xl bg-surface-pure border border-soft-line overflow-hidden shadow-sm flex flex-col md:flex-row md:items-center md:p-7 md:gap-6">
+      <div className="w-full aspect-video md:w-28 md:h-28 md:aspect-auto md:rounded-2xl overflow-hidden flex-shrink-0 bg-canvas-clinical md:border md:border-soft-line">
       <img className="w-full h-full object-cover" data-alt="Shopping Downtown Barra exterior walkways and quiet car-free zones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZH7jiyrmt8DwhSPLNV70640d9R_ijEBkFmUesXJED5mSMUAhcwm0d085iNAnBLZdlQCXxc3dEk0Bc8wY9shR_6-Hw7qBerVbhsDB81Y8nDsMZM_CoTtb_kJJRsvnb9F2_ghRwvfFULaPqyBnagbKz0KGYwNvuAyHPhU3saae2uyp0JQWMKQZoZULELRY2VoRE8loHRZS9PcnJ6Mn1q7iTdOfAUnO6VvyzCzyCJxa0BSYjuaZzdqY" />
       </div>
-      <div className="flex flex-col gap-2 flex-1">
-      <div className="flex items-center gap-2 text-connection-blue font-label-md font-bold">
-      <span className="material-symbols-outlined text-[20px]">local_parking</span>
-      <span className="">Acesso Facilitado com Valet no Bloco&nbsp;4</span>
+      <div className="flex flex-col gap-2 flex-1 p-5 md:p-0">
+      <div className="flex items-start gap-3 text-connection-blue font-label-md font-bold">
+      <span className="material-symbols-outlined text-[36px] md:text-[22px] leading-none shrink-0">local_parking</span>
+      <span className="leading-snug pt-0.5">Acesso Facilitado com Valet no Bloco 4</span>
       </div>
       <h4 className="font-headline-sm text-headline-sm font-bold text-ink-deep">Estacionamento Coberto e Elevadores Diretos</h4>
       <p className="font-body-sm text-body-sm text-crimap-gray leading-relaxed">
@@ -99,14 +99,14 @@ export function StructureSection() {
       </div>
       </div>
       {/* Facility Feature 2: Family Room */}
-      <div className="p-7 rounded-2xl bg-surface-pure border border-soft-line flex flex-col sm:flex-row items-center gap-6 shadow-sm">
-      <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden flex-shrink-0 bg-canvas-clinical border border-soft-line">
+      <div className="rounded-2xl bg-surface-pure border border-soft-line overflow-hidden shadow-sm flex flex-col md:flex-row md:items-center md:p-7 md:gap-6">
+      <div className="w-full aspect-video md:w-28 md:h-28 md:aspect-auto md:rounded-2xl overflow-hidden flex-shrink-0 bg-canvas-clinical md:border md:border-soft-line">
       <img className="w-full h-full object-cover" data-alt="Warm welcoming lounge and family breastfeeding room in clinic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiRTp8ccvkGZTPc8wty-l9JQJQseHOCUIFManwgVFddt2PhBsHxDGJNLPNbooP9FHPr2K7XL0e2QePJe9q8AVR4hQg0l1bXFEGGEDt40w3Jg24xDEXJHmhhS5UoTefgmL-yWpwXPZ3toIqi0_9dQNIXcNpeYwB2_kAexIE8GEAsnVym2jU33hB8xebWB63-X8RmnvHz-sfMeUyKJ4miA6zP4fnMpacLGCw2bJ-VH4yHsC6RpY8bd0" />
       </div>
-      <div className="flex flex-col gap-2 flex-1">
-      <div className="flex items-center gap-2 text-vitality-rose font-label-md font-bold">
-      <span className="material-symbols-outlined text-[20px]">child_friendly</span>
-      <span className="">Espaço Família &amp; Sala de&nbsp;Amamentação</span>
+      <div className="flex flex-col gap-2 flex-1 p-5 md:p-0">
+      <div className="flex items-start gap-3 text-vitality-rose font-label-md font-bold">
+      <span className="material-symbols-outlined text-[36px] md:text-[22px] leading-none shrink-0">child_friendly</span>
+      <span className="leading-snug pt-0.5">Espaço Família &amp; Sala de Amamentação</span>
       </div>
       <h4 className="font-headline-sm text-headline-sm font-bold text-ink-deep">Conforto para Pais e Irmãos</h4>
       <p className="font-body-sm text-body-sm text-crimap-gray leading-relaxed">

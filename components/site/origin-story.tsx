@@ -35,7 +35,7 @@ export function OriginStory() {
                   "Não tratamos apenas diagnósticos ou tabelas de marcos do desenvolvimento; acolhemos o potencial de cada criança e sustentamos a esperança da família a cada pequeno&nbsp;passo."
                 </p>
       </blockquote>
-      <div className="flex items-center gap-6 pt-2">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 pt-2">
       <div className="flex items-center gap-2 text-crimap-gray font-body-sm">
       <span className="material-symbols-outlined text-connection-blue text-[18px]">workspace_premium</span>
       <span className="">Excelência técnica com certificação contínua</span>

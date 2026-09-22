@@ -171,12 +171,31 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 p,
 blockquote,
 [class*="font-body"],
 [class*="font-display"] {
   text-wrap: pretty;
+}
+
+@media (max-width: 767.98px) {
+  .text-headline-xl {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+select {
+  max-width: 100%;
+  text-overflow: ellipsis;
+}
+select option {
+  font-size: 15px;
+  line-height: 1.4;
+  padding: 10px 12px;
 }
 
 .material-symbols-outlined {
