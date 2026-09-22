@@ -4,7 +4,7 @@ export function InformationBoard() {
   return (
     <>
       {/* 11. Formulário Rápido de Acolhimento / Triagem Inicial */}
-      <section className="w-full bg-surface-pure py-20 px-6 lg:px-12 border-b border-soft-line" id="triagem">
+      <section className="w-full bg-surface-pure py-20 px-5 md:px-6 lg:px-12 border-b border-soft-line" id="triagem">
       <div className="max-w-[1360px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
       {/* Left Column: Context & Reassurance */}
       <div className="lg:col-span-5 flex flex-col gap-6">
@@ -45,7 +45,7 @@ export function InformationBoard() {
       </div>
       {/* Right Column: Interactive Clean Non-Intimidating Intake Form */}
       <div className="lg:col-span-7">
-      <form className="p-8 sm:p-10 rounded-3xl bg-canvas-clinical border border-soft-line shadow-[0_4px_24px_-2px_rgba(23,33,43,0.06)] flex flex-col gap-6" onSubmit={(event) => { event.preventDefault(); document.getElementById('form-feedback')?.classList.remove('hidden'); }}>
+      <form className="p-5 sm:p-8 lg:p-10 rounded-3xl bg-canvas-clinical border border-soft-line shadow-[0_4px_24px_-2px_rgba(23,33,43,0.06)] flex flex-col gap-6" onSubmit={(event) => { event.preventDefault(); document.getElementById('form-feedback')?.classList.remove('hidden'); }}>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
       {/* Parent Name */}
       <div className="flex flex-col gap-2">

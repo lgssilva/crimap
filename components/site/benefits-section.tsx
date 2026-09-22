@@ -2,7 +2,7 @@ export function BenefitsSection() {
   return (
     <>
       {/* 7. 'Benefícios Concretos Para a Sua Família' (Vantagens do Modelo Conectado) */}
-      <section className="w-full bg-surface-pure py-20 px-6 lg:px-12 border-b border-soft-line">
+      <section className="w-full bg-surface-pure py-20 px-5 md:px-6 lg:px-12 border-b border-soft-line">
       <div className="max-w-[1360px] mx-auto flex flex-col gap-12">
       <div className="flex flex-col max-w-2xl gap-3">
       <div className="inline-flex items-center gap-2 text-connection-blue font-label-md text-label-md font-semibold tracking-wider uppercase">

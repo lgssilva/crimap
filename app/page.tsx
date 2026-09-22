@@ -20,7 +20,7 @@ export default function HomePage() {
       <SiteEffects />
       <SiteHeader />
       <MobileDrawer />
-      <main className="w-full pt-20 bg-canvas-clinical">
+      <main className="w-full pt-20 bg-canvas-clinical overflow-x-hidden">
         <div className="flex flex-col w-full">
           <Hero />
           <TrustStrip />

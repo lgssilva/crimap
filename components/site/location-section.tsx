@@ -2,8 +2,8 @@ export function LocationSection() {
   return (
     <>
       {/* 12. Interactive Direct Map & Downtown Directions Module */}
-      <section className="w-full bg-canvas-clinical py-16 px-6 lg:px-12" id="localizacao">
-      <div className="reveal max-w-[1360px] mx-auto rounded-3xl bg-surface-pure border border-soft-line p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <section className="w-full bg-canvas-clinical py-16 px-5 md:px-6 lg:px-12" id="localizacao">
+      <div className="reveal max-w-[1360px] mx-auto rounded-3xl bg-surface-pure border border-soft-line p-5 sm:p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-w-0">
       <div className="lg:col-span-6 flex flex-col gap-4">
       <div className="inline-flex items-center gap-2 text-connection-blue font-label-md font-semibold uppercase tracking-wider">
       <span className="material-symbols-outlined text-[16px]">pin_drop</span>

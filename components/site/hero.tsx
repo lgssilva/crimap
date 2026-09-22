@@ -2,7 +2,7 @@ export function Hero() {
   return (
     <>
       {/* 1. Top Utility & Location Bar */}
-      <div className="w-full bg-surface-pure border-b border-soft-line py-2.5 px-6 lg:px-12 text-body-sm font-body-sm text-crimap-gray">
+      <div className="hidden md:block w-full bg-surface-pure border-b border-soft-line py-2.5 px-5 md:px-6 lg:px-12 text-body-sm font-body-sm text-crimap-gray">
       <div className="max-w-[1360px] mx-auto flex flex-wrap items-center gap-3">
       <div className="flex items-center gap-2.5 flex-wrap">
       <span className="inline-flex items-center gap-1.5 text-connection-blue font-medium">
@@ -20,35 +20,35 @@ export function Hero() {
       </div>
       </div>
       {/* 2. Hero Section (Harmonious 2-Column Editorial with Video Frame Motif) */}
-      <section className="w-full bg-canvas-clinical pt-12 pb-20 px-6 lg:px-12 border-b border-soft-line overflow-hidden">
-      <div className="max-w-[1360px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <section className="w-full bg-canvas-clinical pt-12 pb-20 px-5 md:px-6 lg:px-12 border-b border-soft-line">
+      <div className="max-w-[1360px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center min-w-0">
       {/* Left Column: Editorial & Value Proposition */}
-      <div className="lg:col-span-7 flex flex-col gap-6">
+      <div className="lg:col-span-7 flex flex-col gap-6 min-w-0">
       {/* Eyebrow Pill */}
-      <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-pure border border-soft-line w-fit shadow-sm">
+      <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-pure border border-soft-line w-fit max-w-full shadow-sm">
       <div className="flex items-center gap-1">
       <span className="w-2 h-2 rounded-full bg-connection-blue"></span>
       <span className="w-2 h-2 rounded-full bg-energy-yellow"></span>
       <span className="w-2 h-2 rounded-full bg-vitality-rose"></span>
       <span className="w-2 h-2 rounded-full bg-progress-green"></span>
       </div>
-      <span className="font-label-md text-label-md text-crimap-gray font-medium">Clínica multidisciplinar para crianças e jovens na Barra da&nbsp;Tijuca</span>
+      <span className="font-label-md text-label-md text-crimap-gray font-medium">Clínica multidisciplinar para crianças e jovens na Barra da Tijuca</span>
       </div>
       {/* Headline with ring graphic indicator */}
       <div className="flex flex-col gap-2">
-      <h1 className="font-display-lg text-display-lg text-ink-deep tracking-tight leading-tight">Cada conquista começa quando o cuidado&nbsp;se <span className="text-connection-blue relative inline-block">conecta<svg className="absolute -bottom-1.5 left-0 w-full" fill="none" height="6" viewBox="0 0 160 6" xmlns="http://www.w3.org/2000/svg"><path d="M1 4C45 1.5 115 1.5 159 4" stroke="#0070B8" strokeLinecap="round" strokeWidth="2.5"></path></svg></span>.</h1>
+      <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-ink-deep leading-tight overflow-visible">Cada conquista começa quando o cuidado se <span className="text-connection-blue relative inline-block">conecta.<svg className="absolute -bottom-1.5 left-0 w-full overflow-visible" fill="none" height="6" viewBox="0 0 160 6" xmlns="http://www.w3.org/2000/svg"><path d="M1 4C45 1.5 115 1.5 159 4" stroke="#0070B8" strokeLinecap="round" strokeWidth="2.5"></path></svg></span></h1>
       </div>
       {/* Paragraph Description */}
       <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
                 Na CRIMAP, diferentes especialidades trabalham juntas em uma única mesa para compreender cada criança ou jovem por inteiro, respeitando sua história, seu ritmo e suas&nbsp;possibilidades.
               </p>
       {/* CTA cluster */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-2">
-      <a className="inline-flex items-center justify-center gap-2.5 px-7 h-12 bg-connection-blue text-on-primary font-label-lg text-label-lg rounded-xl shadow-[0_4px_16px_rgba(0,112,184,0.22)] hover:bg-primary transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-connection-blue" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20acolhimento%20inicial%20na%20CRIMAP" rel="noopener noreferrer" target="_blank">
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2 w-full min-w-0">
+      <a className="inline-flex items-center justify-center gap-2.5 px-5 sm:px-7 min-h-12 h-auto py-3 sm:h-12 w-full sm:w-auto bg-connection-blue text-on-primary font-label-lg text-label-lg rounded-xl shadow-[0_4px_16px_rgba(0,112,184,0.22)] hover:bg-primary transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-connection-blue text-center" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20acolhimento%20inicial%20na%20CRIMAP" rel="noopener noreferrer" target="_blank">
       <span className="material-symbols-outlined text-[20px]">chat</span>
                   Agendar Acolhimento Inicial via&nbsp;WhatsApp
                 </a>
-      <a className="inline-flex items-center justify-center gap-2 px-5 h-12 bg-surface-pure border border-soft-line text-ink-deep font-label-lg text-label-lg rounded-xl hover:bg-surface-container-low transition-colors" href="#como-funciona">
+      <a className="inline-flex items-center justify-center gap-2 px-5 h-12 w-full sm:w-auto bg-surface-pure border border-soft-line text-ink-deep font-label-lg text-label-lg rounded-xl hover:bg-surface-container-low transition-colors" href="#como-funciona">
       <span className="material-symbols-outlined text-[18px] text-crimap-gray">schedule</span>
                   Como funciona a 1ª&nbsp;consulta
                 </a>
@@ -59,7 +59,7 @@ export function Hero() {
       <span className="">Atendimento particular com relatórios completos para reembolso e apoio escolar&nbsp;contínuo.</span>
       </div>
       {/* Floating Quick-Stats / Highlights */}
-      <div className="grid grid-cols-3 gap-4 pt-4 border-t border-soft-line">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-soft-line min-w-0">
       <div className="flex flex-col">
       <span className="font-headline-md text-headline-md font-bold text-ink-deep">+8&nbsp;Anos</span>
       <span className="font-body-sm text-body-sm text-crimap-gray leading-tight">De história e dedicação contínua no&nbsp;Downtown</span>
@@ -75,7 +75,7 @@ export function Hero() {
       </div>
       </div>
       {/* Right Column: Institutional Video Frame Composition */}
-      <div className="lg:col-span-5 relative reveal-scale">
+      <div className="lg:col-span-5 relative reveal-scale min-w-0 overflow-hidden">
       <div className="relative rounded-3xl overflow-hidden bg-surface-pure border border-soft-line shadow-[0_12px_40px_-8px_rgba(23,33,43,0.08)] group">
       {/* Institutional Video Frame */}
       <div className="relative w-full aspect-[4/5] overflow-hidden bg-ink-deep">

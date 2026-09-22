@@ -1,7 +1,7 @@
 export function SiteFooter() {
   return (
     <>
-      <footer className="relative overflow-hidden px-6 lg:px-12" style={{ background: "linear-gradient(165deg, #003d6b 0%, #005791 40%, #0070b8 100%)" }}>
+      <footer className="relative overflow-hidden px-5 md:px-6 lg:px-12" style={{ background: "linear-gradient(165deg, #003d6b 0%, #005791 40%, #0070b8 100%)" }}>
       {/* Decorative circles — subtle, not overlapping content */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
       <div className="absolute -top-32 -right-32 w-72 h-72 rounded-full border border-white/[0.04]"></div>

@@ -146,6 +146,8 @@
   body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    max-width: 100%;
   }
   body {
     overscroll-behavior: none;
@@ -287,6 +289,17 @@ blockquote,
 .reveal-right.visible {
   opacity: 1;
   transform: translateX(0);
+}
+
+@media (max-width: 767.98px) {
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(24px);
+  }
+  .reveal-left.visible,
+  .reveal-right.visible {
+    transform: translateY(0);
+  }
 }
 
 .reveal-scale {

@@ -2,7 +2,7 @@ export function TherapiesSection() {
   return (
     <>
       {/* 5. Specialized Services Grid */}
-      <section className="w-full bg-surface-pure py-20 px-6 lg:px-12 border-b border-soft-line" id="galeria-momentos">
+      <section className="w-full bg-surface-pure py-20 px-5 md:px-6 lg:px-12 border-b border-soft-line" id="galeria-momentos">
         <div className="reveal max-w-[1360px] mx-auto flex flex-col gap-12">
           {/* Header */}
           <div className="flex flex-col max-w-3xl gap-3">
@@ -109,7 +109,7 @@ export function TherapiesSection() {
             </div>
           </div>
         </div>
-      </section><section className="w-full bg-surface-pure py-20 px-6 lg:px-12 border-b border-soft-line" id="terapias">
+      </section><section className="w-full bg-surface-pure py-20 px-5 md:px-6 lg:px-12 border-b border-soft-line" id="terapias">
       <div className="reveal max-w-[1360px] mx-auto flex flex-col gap-14">
       {/* Section Heading */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
@@ -158,7 +158,7 @@ export function TherapiesSection() {
       </div>
       <div className="pt-6 mt-6 border-t border-soft-line flex items-center justify-between">
       <span className="font-label-sm text-label-sm text-crimap-gray">Salas com tatames e suspensão</span>
-      <a className="text-connection-blue font-label-md font-bold hover:underline flex items-center gap-1" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Fisioterapia%20na%20CRIMAP">
+      <a className="text-connection-blue font-label-md font-bold hover:text-primary no-underline flex items-center gap-1" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Fisioterapia%20na%20CRIMAP">
                     Agendar <span className="material-symbols-outlined text-[16px]">chevron_right</span>
       </a>
       </div>
@@ -189,7 +189,7 @@ export function TherapiesSection() {
       </div>
       <div className="pt-6 mt-6 border-t border-soft-line flex items-center justify-between">
       <span className="font-label-sm text-label-sm text-crimap-gray">Abordagem lúdica e estruturada</span>
-      <a className="text-connection-blue font-label-md font-bold hover:underline flex items-center gap-1" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Fonoaudiologia%20na%20CRIMAP">
+      <a className="text-connection-blue font-label-md font-bold hover:text-primary no-underline flex items-center gap-1" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Fonoaudiologia%20na%20CRIMAP">
                     Agendar <span className="material-symbols-outlined text-[16px]">chevron_right</span>
       </a>
       </div>
@@ -220,7 +220,7 @@ export function TherapiesSection() {
       </div>
       <div className="pt-6 mt-6 border-t border-soft-line flex items-center justify-between">
       <span className="font-label-sm text-label-sm text-crimap-gray">Sala com balanços e tirolesa</span>
-      <a className="text-connection-blue font-label-md font-bold hover:underline flex items-center gap-1" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Terapia%20Ocupacional%20na%20CRIMAP">
+      <a className="text-connection-blue font-label-md font-bold hover:text-primary no-underline flex items-center gap-1" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Terapia%20Ocupacional%20na%20CRIMAP">
                     Agendar <span className="material-symbols-outlined text-[16px]">chevron_right</span>
       </a>
       </div>
@@ -251,7 +251,7 @@ export function TherapiesSection() {
       </div>
       <div className="pt-6 mt-6 border-t border-soft-line flex items-center justify-between">
       <span className="font-label-sm text-label-sm text-crimap-gray">Espaço seguro e confidencial</span>
-      <a className="text-connection-blue font-label-md font-bold hover:underline flex items-center gap-1" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Psicologia%20na%20CRIMAP">
+      <a className="text-connection-blue font-label-md font-bold hover:text-primary no-underline flex items-center gap-1" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Psicologia%20na%20CRIMAP">
                     Agendar <span className="material-symbols-outlined text-[16px]">chevron_right</span>
       </a>
       </div>
@@ -282,7 +282,7 @@ export function TherapiesSection() {
       </div>
       <div className="pt-6 mt-6 border-t border-soft-line flex items-center justify-between">
       <span className="font-label-sm text-label-sm text-crimap-gray">Articulação direta com a escola</span>
-      <a className="text-connection-blue font-label-md font-bold hover:underline flex items-center gap-1" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Psicopedagogia%20na%20CRIMAP">
+      <a className="text-connection-blue font-label-md font-bold hover:text-primary no-underline flex items-center gap-1" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Psicopedagogia%20na%20CRIMAP">
                     Agendar <span className="material-symbols-outlined text-[16px]">chevron_right</span>
       </a>
       </div>
@@ -313,7 +313,7 @@ export function TherapiesSection() {
       </div>
       <div className="pt-6 mt-6 border-t border-soft-line flex items-center justify-between">
       <span className="font-label-sm text-label-sm text-crimap-gray">Olhar integral e acolhedor</span>
-      <a className="text-connection-blue font-label-md font-bold hover:underline flex items-center gap-1" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Neuropediatria%20na%20CRIMAP">
+      <a className="text-connection-blue font-label-md font-bold hover:text-primary no-underline flex items-center gap-1" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Neuropediatria%20na%20CRIMAP">
                     Agendar <span className="material-symbols-outlined text-[16px]">chevron_right</span>
       </a>
       </div>

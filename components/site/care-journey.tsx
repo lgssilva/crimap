@@ -2,7 +2,7 @@ export function CareJourney() {
   return (
     <>
       {/* 6. 'O Que Esperar da Sua Primeira Visita' (5-Step Journey Inspired by 101 Physio) */}
-      <section className="w-full bg-canvas-clinical py-20 px-6 lg:px-12 border-b border-soft-line" id="como-funciona">
+      <section className="w-full bg-canvas-clinical py-20 px-5 md:px-6 lg:px-12 border-b border-soft-line" id="como-funciona">
       <div className="reveal max-w-[1360px] mx-auto flex flex-col gap-16">
       {/* Section Header */}
       <div className="flex flex-col items-center text-center max-w-2xl mx-auto gap-3">

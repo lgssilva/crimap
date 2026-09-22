@@ -2,7 +2,7 @@ export function TestimonialsSection() {
   return (
     <>
       {/* 9. Depoimentos Reais de Pais (Trusted Editorial Reviews) */}
-      <section className="w-full bg-surface-pure py-20 px-6 lg:px-12 border-b border-soft-line" id="depoimentos">
+      <section className="w-full bg-surface-pure py-20 px-5 md:px-6 lg:px-12 border-b border-soft-line" id="depoimentos">
       <div className="reveal max-w-[1360px] mx-auto flex flex-col gap-12">
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">

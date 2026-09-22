@@ -2,7 +2,7 @@ export function OriginStory() {
   return (
     <>
       {/* 8. Fundadora & Propósito (A história de Kariny e Manuel Arthur - 2016) */}
-      <section className="w-full bg-canvas-clinical py-20 px-6 lg:px-12 border-b border-soft-line" id="origem">
+      <section className="w-full bg-canvas-clinical py-20 px-5 md:px-6 lg:px-12 border-b border-soft-line" id="origem">
       <div className="max-w-[1360px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
       {/* Left Column: Emotional Founder Portrait */}
       <div className="lg:col-span-5 relative reveal-scale">

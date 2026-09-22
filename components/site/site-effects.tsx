@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { closeDrawer } from "@/components/site/mobile-drawer";
 
 export function SiteEffects() {
   useEffect(() => {
@@ -34,11 +35,7 @@ export function SiteEffects() {
     window.addEventListener("scroll", onScroll, { passive: true });
 
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        document
-          .getElementById("mobileDrawer")
-          ?.classList.add("translate-x-full");
-      }
+      if (event.key === "Escape") closeDrawer();
     };
     document.addEventListener("keydown", onKey);
 

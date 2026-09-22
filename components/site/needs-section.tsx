@@ -2,7 +2,7 @@ export function NeedsSection() {
   return (
     <>
       {/* 4. Needs First (O que seu filho precisa agora?) */}
-      <section className="w-full bg-canvas-clinical py-20 px-6 lg:px-12 border-b border-soft-line">
+      <section className="w-full bg-canvas-clinical py-20 px-5 md:px-6 lg:px-12 border-b border-soft-line">
       <div className="max-w-[1360px] mx-auto flex flex-col gap-12">
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 max-w-3xl">

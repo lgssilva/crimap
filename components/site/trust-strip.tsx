@@ -2,7 +2,7 @@ export function TrustStrip() {
   return (
     <>
       {/* 3. Quick Trust Strip (4 Core Pillars) */}
-      <section className="w-full bg-surface-pure py-8 px-6 lg:px-12 border-b border-soft-line">
+      <section className="w-full bg-surface-pure py-8 px-5 md:px-6 lg:px-12 border-b border-soft-line">
       <div className="max-w-[1360px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal-children">
       {/* Pillar 1 */}
       <div className="flex items-start gap-3.5 p-4 rounded-2xl bg-canvas-clinical border border-soft-line cursor-pointer transition-all duration-300 ease-out hover:-translate-y-1.5 hover:shadow-[0_12px_32px_-4px_rgba(23,33,43,0.1)] hover:border-connection-blue/20">

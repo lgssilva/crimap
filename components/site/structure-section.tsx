@@ -2,7 +2,7 @@ export function StructureSection() {
   return (
     <>
       {/* 10. Estrutura no Downtown & Galeria Expandida dos Espaços */}
-      <section className="w-full bg-canvas-clinical py-20 px-6 lg:px-12 border-b border-soft-line" id="estrutura">
+      <section className="w-full bg-canvas-clinical py-20 px-5 md:px-6 lg:px-12 border-b border-soft-line" id="estrutura">
       <div className="reveal max-w-[1360px] mx-auto flex flex-col gap-12">
       <div className="flex flex-col max-w-3xl gap-3">
       <div className="inline-flex items-center gap-2 text-connection-blue font-label-md text-label-md font-semibold tracking-wider uppercase">
