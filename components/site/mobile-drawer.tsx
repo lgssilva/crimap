@@ -10,7 +10,7 @@ function openDrawer() {
   drawer
     ?.querySelector("[data-drawer-panel]")
     ?.classList.remove("translate-x-full");
-  document.body.classList.add("overflow-hidden");
+  document.body.classList.add("is-drawer-open");
 }
 
 function closeDrawer() {
@@ -21,7 +21,7 @@ function closeDrawer() {
   drawer
     ?.querySelector("[data-drawer-panel]")
     ?.classList.add("translate-x-full");
-  document.body.classList.remove("overflow-hidden");
+  document.body.classList.remove("is-drawer-open");
 }
 
 const links = [

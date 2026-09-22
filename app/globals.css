@@ -142,15 +142,23 @@
 }
 
 @layer base {
-  html,
+  html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 100%;
+  }
   body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: auto;
     max-width: 100%;
+    overscroll-behavior-x: none;
   }
-  body {
-    overscroll-behavior: none;
+  body.is-drawer-open {
+    overflow-y: hidden;
   }
   main > :first-child {
     margin-top: 0 !important;
