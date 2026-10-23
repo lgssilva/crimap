@@ -599,10 +599,10 @@ export function SiteFooter() {
       <div className="lg:col-span-2">
       <h4 className="text-[11px] font-semibold text-white/30 uppercase tracking-[0.12em] mb-5">Navegação</h4>
       <ul className="flex flex-col gap-3.5">
-      <li><a href="#terapias" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Terapias</a></li>
-      <li><a href="#como-funciona" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Como cuidamos</a></li>
-      <li><a href="#origem" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">A CRIMAP</a></li>
-      <li><a href="#depoimentos" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Depoimentos</a></li>
+      <li><a href="/especialidades" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Especialidades</a></li>
+      <li><a href="/sobre" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Sobre a CRIMAP</a></li>
+      <li><a href="/equipe" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Nossa Equipe</a></li>
+      <li><a href="/contato" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Contato</a></li>
       </ul>
       </div>
       
@@ -629,8 +629,9 @@ export function SiteFooter() {
       <div className="lg:col-span-3">
       <h4 className="text-[11px] font-semibold text-white/30 uppercase tracking-[0.12em] mb-5">Contato</h4>
       <ul className="flex flex-col gap-3.5">
-      <li><a href="#estrutura" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Estrutura e localização</a></li>
-      <li><a href="#cursos" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Cursos e eventos</a></li>
+      <li><a href="/contato" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Localização e horários</a></li>
+      <li><a href="https://wa.me/5521988451234" target="_blank" rel="noopener noreferrer" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">WhatsApp</a></li>
+      <li><a href="https://www.instagram.com/crimaprj/" target="_blank" rel="noopener noreferrer" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Instagram</a></li>
       </ul>
       <div className="mt-6 pt-5 border-t border-white/8">
       <p className="text-[12px] text-white/30 leading-relaxed">Dados de contato em processo de atualização. Para informações, utilize o WhatsApp.</p>

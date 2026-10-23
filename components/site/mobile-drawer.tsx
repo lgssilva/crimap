@@ -25,12 +25,10 @@ function closeDrawer() {
 }
 
 const links = [
-  { href: "#terapias", label: "Terapias" },
-  { href: "#como-funciona", label: "Como cuidamos" },
-  { href: "#origem", label: "A CRIMAP" },
-  { href: "#depoimentos", label: "Depoimentos" },
-  { href: "#estrutura", label: "Estrutura" },
-  { href: "#localizacao", label: "Localização" },
+  { href: "/especialidades", label: "Especialidades" },
+  { href: "/sobre", label: "Sobre a CRIMAP" },
+  { href: "/equipe", label: "Nossa Equipe" },
+  { href: "/contato", label: "Contato" },
 ];
 
 export { openDrawer, closeDrawer };

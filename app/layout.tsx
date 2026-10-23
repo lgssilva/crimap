@@ -1,6 +1,10 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
+import { MobileDrawer } from "@/components/site/mobile-drawer";
+import { SiteEffects } from "@/components/site/site-effects";
+import { SiteFooter } from "@/components/site/site-footer";
+import { SiteHeader } from "@/components/site/site-header";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -36,7 +40,13 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-canvas-clinical font-body-md text-on-surface antialiased">
-        {children}
+        <SiteEffects />
+        <SiteHeader />
+        <MobileDrawer />
+        <main className="w-full pt-20 bg-canvas-clinical overflow-x-hidden">
+          {children}
+        </main>
+        <SiteFooter />
       </body>
     </html>
   );
