@@ -5,7 +5,7 @@ import { VideoPlaceholder } from "@/components/site/video-placeholder";
 import { AI_IMAGES } from "@/lib/ai-images";
 
 export const metadata: Metadata = {
-  title: "Serviços Especializados — CRIMAP",
+  title: "Serviços Especializados | CRIMAP",
   description:
     "Reforço escolar, nutrição infantil e neuropediatria: serviços complementares que ampliam o cuidado multidisciplinar da CRIMAP.",
 };

@@ -4,7 +4,7 @@ import { AI_IMAGES } from "@/lib/ai-images";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Depoimentos — CRIMAP",
+  title: "Depoimentos | CRIMAP",
   description:
     "Histórias reais de famílias que encontraram na CRIMAP o cuidado, acolhimento e transformação que buscavam para seus filhos.",
 };

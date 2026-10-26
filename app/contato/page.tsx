@@ -4,7 +4,7 @@ import { AI_IMAGES } from "@/lib/ai-images";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contato — CRIMAP",
+  title: "Contato | CRIMAP",
   description:
     "Entre em contato com a CRIMAP. Localização no Downtown Barra da Tijuca, WhatsApp, telefone e formulário de contato.",
 };

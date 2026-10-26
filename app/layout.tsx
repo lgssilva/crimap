@@ -9,7 +9,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: "CRIMAP — Clínica de Reabilitação Integrada Manuel Arthur Peixoto",
+  title: "CRIMAP | Clínica de Reabilitação Integrada Manuel Arthur Peixoto",
   description:
     "CRIMAP, clínica multidisciplinar para crianças e jovens no Downtown Barra da Tijuca.",
 };

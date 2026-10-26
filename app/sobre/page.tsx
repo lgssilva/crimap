@@ -4,7 +4,7 @@ import { whatsappHref } from "@/lib/site-config";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sobre Nós — CRIMAP",
+  title: "Sobre Nós | CRIMAP",
   description:
     "Conheça a história da CRIMAP, fundada por Kariny Peixoto — mãe de Manuel Arthur — e nossa missão de transformar vidas através da reabilitação com afeto.",
 };

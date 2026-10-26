@@ -5,7 +5,7 @@ import { VideoPlaceholder } from "@/components/site/video-placeholder";
 import { AI_IMAGES } from "@/lib/ai-images";
 
 export const metadata: Metadata = {
-  title: "Terapias e Tratamentos — CRIMAP",
+  title: "Terapias e Tratamentos | CRIMAP",
   description:
     "Conheça os métodos terapêuticos da CRIMAP: PNF Kabat, RTA, Therasuit, Eletroestimulação, Kinesio Tape, Integração Sensorial e Conceito Bobath.",
 };

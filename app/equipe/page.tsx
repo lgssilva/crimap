@@ -4,7 +4,7 @@ import { AI_IMAGES } from "@/lib/ai-images";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Nossa Equipe — CRIMAP",
+  title: "Nossa Equipe | CRIMAP",
   description:
     "Conheça os profissionais da CRIMAP: uma equipe multidisciplinar especializada em reabilitação infantil na Barra da Tijuca.",
 };
