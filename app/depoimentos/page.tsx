@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { whatsappHref } from "@/lib/site-config";
 import { AI_IMAGES } from "@/lib/ai-images";
+import { GoogleReviewCta } from "@/components/site/google-review-cta";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -176,6 +177,13 @@ export default function DepoimentosPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Google Review CTA */}
+      <section className="w-full bg-surface-pure px-5 md:px-6 lg:px-12 pb-16">
+        <div className="max-w-[1360px] mx-auto">
+          <GoogleReviewCta />
         </div>
       </section>
 

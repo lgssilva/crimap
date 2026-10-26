@@ -1,3 +1,5 @@
+import { GoogleReviewCta } from "@/components/site/google-review-cta";
+
 export function TestimonialsSection() {
   return (
     <>
@@ -78,6 +80,9 @@ export function TestimonialsSection() {
       </div>
       </div>
       </div>
+
+      {/* Google Review CTA */}
+      <GoogleReviewCta />
       </div>
       </section>
     </>

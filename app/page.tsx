@@ -6,6 +6,7 @@ import { NeedsSection } from "@/components/site/needs-section";
 import { TestimonialsSection } from "@/components/site/testimonials-section";
 import { TrustStrip } from "@/components/site/trust-strip";
 import { CareJourney } from "@/components/site/care-journey";
+import { InstagramFeed } from "@/components/site/instagram-feed";
 import { whatsappHref } from "@/lib/site-config";
 
 /* Static class map — Tailwind v4 needs full class strings for scanning */
@@ -142,6 +143,9 @@ export default function HomePage() {
 
       {/* Testimonials highlight */}
       <TestimonialsSection />
+
+      {/* Instagram Feed */}
+      <InstagramFeed />
 
       {/* Final CTA */}
       <section className="w-full bg-gradient-to-br from-connection-blue to-connection-blue/90 py-16 md:py-20 px-5 md:px-6 lg:px-12">

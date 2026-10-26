@@ -35,6 +35,10 @@ export const siteConfig = {
       "https://maps.google.com/?q=Shopping+Downtown+Barra+da+Tijuca",
     requiresValidation: true,
   },
+  googleReview: {
+    href: "https://g.page/r/CRIMAP/review",
+    requiresValidation: true,
+  },
   founder: {
     name: "Kariny Peixoto",
     role: "Fundadora, mãe de Manuel Arthur e diretora clínica",
