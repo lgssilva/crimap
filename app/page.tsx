@@ -5,6 +5,7 @@ import { Hero } from "@/components/site/hero";
 import { NeedsSection } from "@/components/site/needs-section";
 import { TestimonialsSection } from "@/components/site/testimonials-section";
 import { TrustStrip } from "@/components/site/trust-strip";
+import { CareJourney } from "@/components/site/care-journey";
 import { whatsappHref } from "@/lib/site-config";
 
 /* Static class map — Tailwind v4 needs full class strings for scanning */
@@ -126,6 +127,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Care Journey — "Como funciona a 1ª consulta" */}
+      <CareJourney />
 
       {/* Emotional divider */}
       <EmotionalDivider
