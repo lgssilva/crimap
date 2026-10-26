@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig, whatsappHref } from "@/lib/site-config";
+import { AI_IMAGES } from "@/lib/ai-images";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -18,16 +19,23 @@ export default function ContatoPage() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero */}
-      <section className="relative w-full bg-gradient-to-br from-connection-blue/5 via-canvas-clinical to-vitality-rose/5 py-16 md:py-24 px-5 md:px-6 lg:px-12 border-b border-soft-line">
-        <div className="max-w-[1360px] mx-auto">
-          <div className="inline-flex items-center gap-2 text-connection-blue font-label-md text-label-md font-semibold tracking-wider uppercase mb-4">
+      <section className="relative w-full py-20 md:py-28 px-5 md:px-6 lg:px-12 border-b border-soft-line overflow-hidden">
+        <img
+          src={AI_IMAGES.sensoryWalk2}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink-deep/85 via-ink-deep/70 to-ink-deep/50" />
+        <div className="relative z-10 max-w-[1360px] mx-auto">
+          <div className="inline-flex items-center gap-2 text-energy-yellow font-label-md text-label-md font-semibold tracking-wider uppercase mb-4">
             <span className="material-symbols-outlined text-[16px]">location_on</span>
             Contato
           </div>
-          <h1 className="font-headline-xl text-headline-xl text-ink-deep font-bold tracking-tight max-w-3xl" style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}>
+          <h1 className="font-headline-xl text-headline-xl text-white font-bold tracking-tight max-w-3xl" style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}>
             Estamos prontos para ouvir&nbsp;você
           </h1>
-          <p className="font-body-lg text-body-lg text-crimap-gray mt-4 max-w-2xl">
+          <p className="font-body-lg text-body-lg text-white/80 mt-4 max-w-2xl">
             Agende uma visita, tire suas dúvidas ou venha conhecer nosso espaço. Cada conversa é o primeiro passo
             para o cuidado do seu&nbsp;filho.
           </p>

@@ -1,11 +1,22 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { openDrawer } from "@/components/site/mobile-drawer";
 
+const navLinks = [
+  { href: "/terapias-tratamentos", label: "Terapias" },
+  { href: "/servicos-especializados", label: "Serviços" },
+  { href: "/sobre", label: "Sobre" },
+  { href: "/equipe", label: "Equipe" },
+  { href: "/depoimentos", label: "Depoimentos" },
+  { href: "/contato", label: "Contato" },
+];
+
 export function SiteHeader() {
+  const pathname = usePathname();
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-surface-pure/90 backdrop-blur-md border-b border-soft-line transition-all duration-300 shadow-[0_4px_20px_-2px_rgba(23,33,43,0.04)] px-5 md:px-6 lg:px-12 overflow-x-hidden"><div className="h-20 max-w-[1360px] mx-auto flex items-center justify-between gap-3 min-w-0"><a className="flex items-center gap-3.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-connection-blue rounded-lg min-w-0 overflow-hidden" data-path="home" href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <header className="fixed top-0 left-0 right-0 z-50 bg-surface-pure/90 backdrop-blur-md border-b border-soft-line transition-all duration-300 shadow-[0_4px_20px_-2px_rgba(23,33,43,0.04)] px-5 md:px-6 lg:px-12 overflow-x-hidden"><div className="h-20 max-w-[1360px] mx-auto flex items-center justify-between gap-3 min-w-0"><a className="flex items-center gap-3.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-connection-blue rounded-lg min-w-0 overflow-hidden" data-path="home" href="/"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       	 style={{ height: "40px", width: "auto", display: "block", maxWidth: "min(220px, calc(100vw - 6rem))" }} viewBox="-30.854 8.922 271 85.156" enableBackground="new -30.854 8.922 271 85.156"
       	 xmlSpace="preserve">
       <g>
@@ -566,7 +577,7 @@ export function SiteHeader() {
       	<rect x="70.43" y="59.679" fill="#5E6168" width="169.15" height="1.627"/>
       </g>
       </svg>
-      </a><nav className="hidden xl:flex items-center gap-8" data-active-classes="text-connection-blue font-semibold"><a className="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="/terapias-tratamentos">Terapias</a><a className="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="/servicos-especializados">Serviços</a><a className="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="/sobre">Sobre</a><a className="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="/equipe">Equipe</a><a className="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="/depoimentos">Depoimentos</a><a className="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="/contato">Contato</a></nav><div className="flex items-center gap-4"><a className="hidden xl:inline-flex items-center justify-center px-6 h-11 bg-connection-blue text-on-primary font-label-lg text-label-lg rounded-[14px] shadow-[0_4px_16px_rgba(0,112,184,0.18)] hover:bg-primary transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-connection-blue" href="https://wa.me/5521988451234" rel="noopener noreferrer" target="_blank">Conversar pelo WhatsApp</a><button className="xl:hidden flex flex-col gap-1.5 p-2 min-w-[48px] min-h-[48px] justify-center items-center" aria-label="Abrir menu" type="button" onClick={openDrawer}><span className="w-5 h-0.5 bg-ink-deep rounded-full"></span><span className="w-5 h-0.5 bg-ink-deep rounded-full"></span><span className="w-5 h-0.5 bg-ink-deep rounded-full"></span></button></div></div></header>
+      </a><nav className="hidden xl:flex items-center gap-8">{navLinks.map((link) => { const isActive = pathname === link.href; return (<a key={link.href} className={`font-label-lg text-label-lg transition-colors ${isActive ? "text-connection-blue font-semibold border-b-2 border-connection-blue pb-0.5" : "text-on-surface-variant hover:text-on-surface"}`} href={link.href}>{link.label}</a>);})}</nav><div className="flex items-center gap-4"><a className="hidden xl:inline-flex items-center justify-center px-6 h-11 bg-connection-blue text-on-primary font-label-lg text-label-lg rounded-[14px] shadow-[0_4px_16px_rgba(0,112,184,0.18)] hover:bg-primary transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-connection-blue" href="https://wa.me/5521988451234" rel="noopener noreferrer" target="_blank">Conversar pelo WhatsApp</a><button className="xl:hidden flex flex-col gap-1.5 p-2 min-w-[48px] min-h-[48px] justify-center items-center" aria-label="Abrir menu" type="button" onClick={openDrawer}><span className="w-5 h-0.5 bg-ink-deep rounded-full"></span><span className="w-5 h-0.5 bg-ink-deep rounded-full"></span><span className="w-5 h-0.5 bg-ink-deep rounded-full"></span></button></div></div></header>
     </>
   );
 }

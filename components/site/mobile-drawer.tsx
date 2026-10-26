@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { siteConfig, whatsappHref } from "@/lib/site-config";
 
 function openDrawer() {
@@ -36,6 +37,7 @@ const links = [
 export { openDrawer, closeDrawer };
 
 export function MobileDrawer() {
+  const pathname = usePathname();
   return (
     <div
       id="mobileDrawer"
@@ -64,16 +66,20 @@ export function MobileDrawer() {
 
         <div className="flex-1 overflow-y-auto px-6 flex flex-col">
           <nav className="flex flex-col" aria-label="Navegação principal">
-            {links.map((link) => (
-              <a
-                key={link.href}
-                className="flex items-center min-h-12 font-headline-sm text-[20px] font-medium text-ink-deep tracking-tight"
-                href={link.href}
-                onClick={closeDrawer}
-              >
-                {link.label}
-              </a>
-            ))}
+            {links.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <a
+                  key={link.href}
+                  className={`flex items-center min-h-12 font-headline-sm text-[20px] font-medium tracking-tight ${isActive ? "text-connection-blue font-semibold" : "text-ink-deep"}`}
+                  href={link.href}
+                  onClick={closeDrawer}
+                >
+                  {isActive && <span className="w-1 h-5 bg-connection-blue rounded-full mr-3 shrink-0" />}
+                  {link.label}
+                </a>
+              );
+            })}
           </nav>
 
           <div className="mt-2 mb-4 h-px bg-soft-line" />

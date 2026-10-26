@@ -148,21 +148,28 @@ export default function TerapiasTratamentosPage() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero */}
-      <section className="relative w-full bg-gradient-to-br from-connection-blue/5 via-canvas-clinical to-progress-green/5 py-16 md:py-24 px-5 md:px-6 lg:px-12 border-b border-soft-line">
-        <div className="max-w-[1360px] mx-auto">
-          <div className="inline-flex items-center gap-2 text-connection-blue font-label-md text-label-md font-semibold tracking-wider uppercase mb-4">
+      <section className="relative w-full py-20 md:py-28 px-5 md:px-6 lg:px-12 border-b border-soft-line overflow-hidden">
+        <img
+          src={AI_IMAGES.sensoryWalk}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink-deep/85 via-ink-deep/70 to-ink-deep/50" />
+        <div className="relative z-10 max-w-[1360px] mx-auto">
+          <div className="inline-flex items-center gap-2 text-energy-yellow font-label-md text-label-md font-semibold tracking-wider uppercase mb-4">
             <span className="material-symbols-outlined text-[16px]">
               medical_services
             </span>
             Terapias e Tratamentos
           </div>
           <h1
-            className="font-headline-xl text-headline-xl text-ink-deep font-bold tracking-tight max-w-3xl"
+            className="font-headline-xl text-headline-xl text-white font-bold tracking-tight max-w-3xl"
             style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}
           >
             Métodos terapêuticos baseados em evidência&nbsp;científica
           </h1>
-          <p className="font-body-lg text-body-lg text-crimap-gray mt-4 max-w-2xl">
+          <p className="font-body-lg text-body-lg text-white/80 mt-4 max-w-2xl">
             Cada técnica é selecionada com critério pela equipe da CRIMAP e
             integrada ao plano individual de cada criança, sempre priorizando
             resultados funcionais e qualidade de vida.
