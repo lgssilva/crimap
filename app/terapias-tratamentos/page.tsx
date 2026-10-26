@@ -10,11 +10,37 @@ export const metadata: Metadata = {
     "Conheça os métodos terapêuticos da CRIMAP: PNF Kabat, RTA, Therasuit, Eletroestimulação, Kinesio Tape, Integração Sensorial e Conceito Bobath.",
 };
 
+/* Static class map — Tailwind v4 needs full class strings for scanning */
+const colorStyles = {
+  "connection-blue": {
+    iconBg: "bg-connection-blue/15",
+    iconText: "text-connection-blue",
+    checkText: "text-connection-blue",
+  },
+  "progress-green": {
+    iconBg: "bg-progress-green/15",
+    iconText: "text-progress-green",
+    checkText: "text-progress-green",
+  },
+  "vitality-rose": {
+    iconBg: "bg-vitality-rose/15",
+    iconText: "text-vitality-rose",
+    checkText: "text-vitality-rose",
+  },
+  "energy-yellow": {
+    iconBg: "bg-energy-yellow/15",
+    iconText: "text-energy-yellow",
+    checkText: "text-energy-yellow",
+  },
+} as const;
+
+type ColorKey = keyof typeof colorStyles;
+
 const therapies = [
   {
     id: "pnf-kabat",
     icon: "accessibility_new",
-    color: "connection-blue",
+    color: "connection-blue" as ColorKey,
     title: "PNF — Facilitação Neuromuscular Proprioceptiva (Método Kabat)",
     shortTitle: "PNF Kabat",
     description:
@@ -29,7 +55,7 @@ const therapies = [
   {
     id: "rta",
     icon: "pulmonology",
-    color: "progress-green",
+    color: "progress-green" as ColorKey,
     title: "Reequilíbrio Toracoabdominal (RTA)",
     shortTitle: "RTA",
     description:
@@ -44,7 +70,7 @@ const therapies = [
   {
     id: "therasuit",
     icon: "fitness_center",
-    color: "vitality-rose",
+    color: "vitality-rose" as ColorKey,
     title: "Therasuit — Programa Intensivo",
     shortTitle: "Therasuit",
     description:
@@ -59,7 +85,7 @@ const therapies = [
   {
     id: "eletroestimulacao",
     icon: "bolt",
-    color: "energy-yellow",
+    color: "energy-yellow" as ColorKey,
     title: "Eletroestimulação Funcional",
     shortTitle: "Eletroestimulação",
     description:
@@ -74,7 +100,7 @@ const therapies = [
   {
     id: "kinesio-tape",
     icon: "healing",
-    color: "progress-green",
+    color: "progress-green" as ColorKey,
     title: "Kinesio Tape — Bandagem Terapêutica",
     shortTitle: "Kinesio Tape",
     description:
@@ -89,7 +115,7 @@ const therapies = [
   {
     id: "integracao-sensorial",
     icon: "toys",
-    color: "connection-blue",
+    color: "connection-blue" as ColorKey,
     title: "Integração Sensorial de Ayres",
     shortTitle: "Integração Sensorial",
     description:
@@ -104,7 +130,7 @@ const therapies = [
   {
     id: "bobath",
     icon: "neurology",
-    color: "vitality-rose",
+    color: "vitality-rose" as ColorKey,
     title: "Conceito Neuroevolutivo Bobath",
     shortTitle: "Bobath",
     description:
@@ -149,6 +175,7 @@ export default function TerapiasTratamentosPage() {
         <div className="max-w-[1360px] mx-auto flex flex-col gap-16 md:gap-20">
           {therapies.map((t, i) => {
             const isEven = i % 2 === 0;
+            const cs = colorStyles[t.color];
             return (
               <article
                 key={t.id}
@@ -170,19 +197,20 @@ export default function TerapiasTratamentosPage() {
                 <div
                   className={`w-full lg:w-1/2 flex flex-col gap-5 ${isEven ? "lg:order-2" : "lg:order-1"}`}
                 >
-                  <div
-                    className={`w-12 h-12 rounded-xl bg-${t.color}/10 flex items-center justify-center`}
-                  >
-                    <span
-                      className={`material-symbols-outlined text-[24px] text-${t.color}`}
+                  <div className="flex items-center gap-4">
+                    <div
+                      className={`w-12 h-12 rounded-xl ${cs.iconBg} flex items-center justify-center shrink-0`}
                     >
-                      {t.icon}
-                    </span>
+                      <span
+                        className={`material-symbols-outlined text-[24px] ${cs.iconText}`}
+                      >
+                        {t.icon}
+                      </span>
+                    </div>
+                    <h2 className="font-headline-lg text-headline-lg text-ink-deep font-bold tracking-tight">
+                      {t.title}
+                    </h2>
                   </div>
-
-                  <h2 className="font-headline-lg text-headline-lg text-ink-deep font-bold tracking-tight">
-                    {t.title}
-                  </h2>
 
                   <p className="font-body-md text-body-md text-crimap-gray leading-relaxed">
                     {t.description}
@@ -192,7 +220,7 @@ export default function TerapiasTratamentosPage() {
                     {t.highlights.map((h) => (
                       <li key={h} className="flex items-start gap-3">
                         <span
-                          className={`material-symbols-outlined text-[18px] text-${t.color} mt-0.5 shrink-0`}
+                          className={`material-symbols-outlined text-[18px] ${cs.checkText} mt-0.5 shrink-0`}
                           style={{ fontVariationSettings: '"FILL" 1' }}
                         >
                           check_circle

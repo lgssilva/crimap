@@ -10,11 +10,35 @@ export const metadata: Metadata = {
     "Reforço escolar, nutrição infantil e neuropediatria: serviços complementares que ampliam o cuidado multidisciplinar da CRIMAP.",
 };
 
+/* Static class map — Tailwind v4 needs full class strings for scanning */
+const colorStyles = {
+  "connection-blue": {
+    iconBg: "bg-connection-blue/15",
+    iconText: "text-connection-blue",
+    checkText: "text-connection-blue",
+    linkText: "text-connection-blue",
+  },
+  "progress-green": {
+    iconBg: "bg-progress-green/15",
+    iconText: "text-progress-green",
+    checkText: "text-progress-green",
+    linkText: "text-progress-green",
+  },
+  "energy-yellow": {
+    iconBg: "bg-energy-yellow/15",
+    iconText: "text-energy-yellow",
+    checkText: "text-energy-yellow",
+    linkText: "text-energy-yellow",
+  },
+} as const;
+
+type ColorKey = keyof typeof colorStyles;
+
 const services = [
   {
     id: "reforco-escolar",
     icon: "school",
-    color: "energy-yellow",
+    color: "energy-yellow" as ColorKey,
     title: "Reforço Escolar Especializado",
     description:
       "Atendimento pedagógico individualizado que respeita o ritmo de cada criança. O reforço escolar da CRIMAP utiliza abordagem lúdica e estratégias personalizadas para superar dificuldades de aprendizagem, resgatar a autoconfiança e promover autonomia nos estudos.",
@@ -29,7 +53,7 @@ const services = [
   {
     id: "nutricao",
     icon: "nutrition",
-    color: "progress-green",
+    color: "progress-green" as ColorKey,
     title: "Nutrição Infantil",
     description:
       "Orientação nutricional voltada para a saúde e o desenvolvimento infantil. A nutricionista da CRIMAP trabalha junto às famílias e cuidadores, orientando sobre alimentação adequada, seletividade alimentar e necessidades nutricionais específicas de crianças com condições neurológicas.",
@@ -44,7 +68,7 @@ const services = [
   {
     id: "neuropediatria",
     icon: "neurology",
-    color: "connection-blue",
+    color: "connection-blue" as ColorKey,
     title: "Neuropediatra",
     description:
       "Diagnóstico e acompanhamento de condições neurológicas e musculares em crianças. O neuropediatra da CRIMAP atua de forma integrada com toda a equipe terapêutica, garantindo que o plano de tratamento seja baseado em avaliação médica precisa e atualizada.",
@@ -88,6 +112,7 @@ export default function ServicosEspecializadosPage() {
         <div className="max-w-[1360px] mx-auto flex flex-col gap-20">
           {services.map((s, i) => {
             const isEven = i % 2 === 0;
+            const cs = colorStyles[s.color];
             return (
               <article
                 key={s.id}
@@ -109,19 +134,20 @@ export default function ServicosEspecializadosPage() {
                 <div
                   className={`w-full lg:w-1/2 flex flex-col gap-5 ${isEven ? "lg:order-2" : "lg:order-1"}`}
                 >
-                  <div
-                    className={`w-12 h-12 rounded-xl bg-${s.color}/10 flex items-center justify-center`}
-                  >
-                    <span
-                      className={`material-symbols-outlined text-[24px] text-${s.color}`}
+                  <div className="flex items-center gap-4">
+                    <div
+                      className={`w-12 h-12 rounded-xl ${cs.iconBg} flex items-center justify-center shrink-0`}
                     >
-                      {s.icon}
-                    </span>
+                      <span
+                        className={`material-symbols-outlined text-[24px] ${cs.iconText}`}
+                      >
+                        {s.icon}
+                      </span>
+                    </div>
+                    <h2 className="font-headline-lg text-headline-lg text-ink-deep font-bold tracking-tight">
+                      {s.title}
+                    </h2>
                   </div>
-
-                  <h2 className="font-headline-lg text-headline-lg text-ink-deep font-bold tracking-tight">
-                    {s.title}
-                  </h2>
 
                   <p className="font-body-md text-body-md text-crimap-gray leading-relaxed">
                     {s.description}
@@ -131,7 +157,7 @@ export default function ServicosEspecializadosPage() {
                     {s.highlights.map((h) => (
                       <li key={h} className="flex items-start gap-3">
                         <span
-                          className={`material-symbols-outlined text-[18px] text-${s.color} mt-0.5 shrink-0`}
+                          className={`material-symbols-outlined text-[18px] ${cs.checkText} mt-0.5 shrink-0`}
                           style={{ fontVariationSettings: '"FILL" 1' }}
                         >
                           check_circle
@@ -149,7 +175,7 @@ export default function ServicosEspecializadosPage() {
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`inline-flex items-center gap-2 mt-2 font-label-md text-label-md font-semibold text-${s.color} hover:underline underline-offset-4 transition-colors w-fit`}
+                    className={`inline-flex items-center gap-2 mt-2 font-label-md text-label-md font-semibold ${cs.linkText} hover:underline underline-offset-4 transition-colors w-fit`}
                   >
                     <span className="material-symbols-outlined text-[18px]">
                       chat

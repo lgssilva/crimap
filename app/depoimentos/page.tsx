@@ -8,12 +8,34 @@ export const metadata: Metadata = {
     "Histórias reais de famílias que encontraram na CRIMAP o cuidado, acolhimento e transformação que buscavam para seus filhos.",
 };
 
+/* Static class map — Tailwind v4 needs full class strings for scanning */
+const depoColorStyles = {
+  "connection-blue": {
+    avatarBg: "bg-connection-blue/15",
+    avatarText: "text-connection-blue",
+  },
+  "progress-green": {
+    avatarBg: "bg-progress-green/15",
+    avatarText: "text-progress-green",
+  },
+  "energy-yellow": {
+    avatarBg: "bg-energy-yellow/15",
+    avatarText: "text-energy-yellow",
+  },
+  "vitality-rose": {
+    avatarBg: "bg-vitality-rose/15",
+    avatarText: "text-vitality-rose",
+  },
+} as const;
+
+type DepoColorKey = keyof typeof depoColorStyles;
+
 const testimonials = [
   {
     name: "Amanda Antunes",
     initials: "AA",
     role: "Mãe do Eduardo",
-    color: "connection-blue",
+    color: "connection-blue" as DepoColorKey,
     featured: true,
     quote:
       "A CRIMAP não é apenas uma clínica de reabilitação, a CRIMAP é uma experiência de AMOR! Vínhamos de uma peregrinação exaustiva entre consultórios desconectados. Quando entramos no Downtown e vimos a equipe toda sentada, conversando sobre o mesmo objetivo para ele, sentimos um alívio que não tem preço. Hoje ele fala, brinca e tem autonomia nas coisas que antes pareciam impossíveis.",
@@ -23,7 +45,7 @@ const testimonials = [
     name: "Madonna Nash",
     initials: "MN",
     role: "Terapeuta Ocupacional (EUA)",
-    color: "progress-green",
+    color: "progress-green" as DepoColorKey,
     featured: false,
     quote:
       "If I had a child with special needs, CRIMAP would be the center I would choose. The dedication of the entire team, the modern structure and the genuine care for each child's development is something truly rare.",
@@ -34,7 +56,7 @@ const testimonials = [
     name: "Fabiane Andrade",
     initials: "FA",
     role: "Mãe do Léo",
-    color: "energy-yellow",
+    color: "energy-yellow" as DepoColorKey,
     featured: false,
     quote:
       "CRIMAP é uma clínica super moderna com estrutura maravilhosa para todo suporte adequado aos seus pacientes. O ambiente do Downtown é perfeito: sem barulho de trânsito, seguro para descer do carro e caminhar. As terapeutas têm um carinho inacreditável e o diálogo com a escola do Léo mudou completamente o rendimento dele.",
@@ -44,7 +66,7 @@ const testimonials = [
     name: "Bruna Saldanha",
     initials: "BS",
     role: "Mãe da Izabel",
-    color: "vitality-rose",
+    color: "vitality-rose" as DepoColorKey,
     featured: true,
     quote:
       "Uma profissional nota 10 e uma pessoa ímpar em nossas vidas! A Kariny e toda a equipe nos acolheram de braços abertos desde o primeiro dia. Nos sentimos em casa. Relatórios extremamente completos que facilitaram o processo de reembolso no meu plano. Além do profissionalismo, o respeito pelo ritmo motor da minha filha nos deu paz de espírito.",
@@ -130,7 +152,7 @@ export default function DepoimentosPage() {
                 {/* Author */}
                 <div className="flex items-center gap-4 pt-4 border-t border-soft-line">
                   <div
-                    className={`w-12 h-12 rounded-full bg-${t.color}/15 text-${t.color} flex items-center justify-center font-headline-sm font-bold`}
+                    className={`w-12 h-12 rounded-full ${depoColorStyles[t.color].avatarBg} ${depoColorStyles[t.color].avatarText} flex items-center justify-center font-headline-sm font-bold`}
                   >
                     {t.initials}
                   </div>

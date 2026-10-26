@@ -7,43 +7,65 @@ import { TestimonialsSection } from "@/components/site/testimonials-section";
 import { TrustStrip } from "@/components/site/trust-strip";
 import { whatsappHref } from "@/lib/site-config";
 
+/* Static class map — Tailwind v4 needs full class strings for scanning */
+const homeColorStyles = {
+  "connection-blue": {
+    iconBg: "bg-connection-blue/10",
+    iconText: "text-connection-blue",
+  },
+  "progress-green": {
+    iconBg: "bg-progress-green/10",
+    iconText: "text-progress-green",
+  },
+  "vitality-rose": {
+    iconBg: "bg-vitality-rose/10",
+    iconText: "text-vitality-rose",
+  },
+  "energy-yellow": {
+    iconBg: "bg-energy-yellow/10",
+    iconText: "text-energy-yellow",
+  },
+} as const;
+
+type HomeColorKey = keyof typeof homeColorStyles;
+
 /* ── Therapy preview cards (compact version for homepage) ── */
 const therapies = [
   {
     icon: "sprint",
     title: "Fisioterapia Motora",
     description: "Desenvolvimento motor e funcional com técnicas especializadas para cada fase.",
-    color: "progress-green",
+    color: "progress-green" as HomeColorKey,
   },
   {
     icon: "record_voice_over",
     title: "Fonoaudiologia",
     description: "Linguagem, fala e comunicação funcional desde os primeiros sons.",
-    color: "connection-blue",
+    color: "connection-blue" as HomeColorKey,
   },
   {
     icon: "toys",
     title: "Terapia Ocupacional",
     description: "Autonomia nas atividades diárias e integração sensorial de Ayres.",
-    color: "energy-yellow",
+    color: "energy-yellow" as HomeColorKey,
   },
   {
     icon: "psychology",
     title: "Psicologia Infantil",
     description: "Ludoterapia e suporte emocional para crianças e famílias.",
-    color: "vitality-rose",
+    color: "vitality-rose" as HomeColorKey,
   },
   {
     icon: "menu_book",
     title: "Psicopedagogia",
     description: "Estratégias clínicas para aprendizagem e desenvolvimento cognitivo.",
-    color: "connection-blue",
+    color: "connection-blue" as HomeColorKey,
   },
   {
     icon: "neurology",
     title: "Neuropediatria",
     description: "Avaliação diagnóstica e acompanhamento do desenvolvimento neurológico.",
-    color: "progress-green",
+    color: "progress-green" as HomeColorKey,
   },
 ];
 
@@ -85,19 +107,22 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {therapies.map((t) => (
-              <Link
-                key={t.title}
-                href="/terapias-tratamentos"
-                className="group p-6 rounded-2xl bg-canvas-clinical border border-soft-line hover:border-soft-line/80 hover:shadow-md transition-all duration-300"
-              >
-                <div className={`w-12 h-12 rounded-xl bg-${t.color}/10 flex items-center justify-center mb-4`}>
-                  <span className={`material-symbols-outlined text-[24px] text-${t.color}`}>{t.icon}</span>
-                </div>
-                <h3 className="font-headline-sm text-headline-sm font-bold text-ink-deep mb-2">{t.title}</h3>
-                <p className="font-body-sm text-body-sm text-crimap-gray">{t.description}</p>
-              </Link>
-            ))}
+            {therapies.map((t) => {
+              const hcs = homeColorStyles[t.color];
+              return (
+                <Link
+                  key={t.title}
+                  href="/terapias-tratamentos"
+                  className="group p-6 rounded-2xl bg-canvas-clinical border border-soft-line hover:border-soft-line/80 hover:shadow-md transition-all duration-300"
+                >
+                  <div className={`w-12 h-12 rounded-xl ${hcs.iconBg} flex items-center justify-center mb-4`}>
+                    <span className={`material-symbols-outlined text-[24px] ${hcs.iconText}`}>{t.icon}</span>
+                  </div>
+                  <h3 className="font-headline-sm text-headline-sm font-bold text-ink-deep mb-2">{t.title}</h3>
+                  <p className="font-body-sm text-body-sm text-crimap-gray">{t.description}</p>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
