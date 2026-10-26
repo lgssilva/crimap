@@ -602,6 +602,8 @@ export function SiteFooter() {
       <li><a href="/especialidades" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Especialidades</a></li>
       <li><a href="/sobre" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Sobre a CRIMAP</a></li>
       <li><a href="/equipe" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Nossa Equipe</a></li>
+      <li><a href="/depoimentos" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Depoimentos</a></li>
+      <li><a href="/cursos" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Cursos e Eventos</a></li>
       <li><a href="/contato" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Contato</a></li>
       </ul>
       </div>
