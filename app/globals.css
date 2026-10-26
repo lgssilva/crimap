@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
 @theme inline {
   --color-on-tertiary-fixed-variant: #703700;
   --color-tertiary: #844200;
