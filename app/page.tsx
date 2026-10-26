@@ -62,7 +62,7 @@ export default function HomePage() {
         overlayColor="from-connection-blue/80 to-ink-deep/70"
       />
 
-      {/* ── Therapy Preview (compact grid → link to /especialidades) ── */}
+      {/* ── Therapy Preview (compact grid → link to /terapias-tratamentos) ── */}
       <section className="w-full bg-surface-pure py-16 md:py-20 px-5 md:px-6 lg:px-12 border-b border-soft-line" id="terapias">
         <div className="max-w-[1360px] mx-auto flex flex-col gap-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
@@ -76,10 +76,10 @@ export default function HomePage() {
               </h2>
             </div>
             <Link
-              href="/especialidades"
+              href="/terapias-tratamentos"
               className="inline-flex items-center gap-2 px-6 h-12 rounded-xl bg-connection-blue text-white font-label-md font-semibold hover:bg-connection-blue/90 transition-colors whitespace-nowrap flex-shrink-0"
             >
-              Ver todas as especialidades
+              Ver terapias e tratamentos
               <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
             </Link>
           </div>
@@ -88,7 +88,7 @@ export default function HomePage() {
             {therapies.map((t) => (
               <Link
                 key={t.title}
-                href="/especialidades"
+                href="/terapias-tratamentos"
                 className="group p-6 rounded-2xl bg-canvas-clinical border border-soft-line hover:border-soft-line/80 hover:shadow-md transition-all duration-300"
               >
                 <div className={`w-12 h-12 rounded-xl bg-${t.color}/10 flex items-center justify-center mb-4`}>

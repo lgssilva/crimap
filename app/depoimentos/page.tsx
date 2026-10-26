@@ -209,13 +209,13 @@ export default function DepoimentosPage() {
               Conversar pelo WhatsApp
             </a>
             <Link
-              href="/especialidades"
+              href="/terapias-tratamentos"
               className="px-8 h-14 inline-flex items-center justify-center rounded-xl border-2 border-white/40 text-white font-label-md font-semibold hover:bg-white/10 transition-colors gap-2"
             >
               <span className="material-symbols-outlined text-[20px]">
                 medical_services
               </span>
-              Ver especialidades
+              Ver terapias
             </Link>
           </div>
         </div>

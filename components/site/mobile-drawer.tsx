@@ -25,11 +25,11 @@ function closeDrawer() {
 }
 
 const links = [
-  { href: "/especialidades", label: "Especialidades" },
+  { href: "/terapias-tratamentos", label: "Terapias e Tratamentos" },
+  { href: "/servicos-especializados", label: "Serviços Especializados" },
   { href: "/sobre", label: "Sobre a CRIMAP" },
   { href: "/equipe", label: "Nossa Equipe" },
   { href: "/depoimentos", label: "Depoimentos" },
-  { href: "/cursos", label: "Cursos e Eventos" },
   { href: "/contato", label: "Contato" },
 ];
 

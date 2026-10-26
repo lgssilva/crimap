@@ -599,11 +599,11 @@ export function SiteFooter() {
       <div className="lg:col-span-2">
       <h4 className="text-[11px] font-semibold text-white/30 uppercase tracking-[0.12em] mb-5">Navegação</h4>
       <ul className="flex flex-col gap-3.5">
-      <li><a href="/especialidades" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Especialidades</a></li>
+      <li><a href="/terapias-tratamentos" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Terapias e Tratamentos</a></li>
+      <li><a href="/servicos-especializados" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Serviços Especializados</a></li>
       <li><a href="/sobre" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Sobre a CRIMAP</a></li>
       <li><a href="/equipe" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Nossa Equipe</a></li>
       <li><a href="/depoimentos" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Depoimentos</a></li>
-      <li><a href="/cursos" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Cursos e Eventos</a></li>
       <li><a href="/contato" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Contato</a></li>
       </ul>
       </div>
