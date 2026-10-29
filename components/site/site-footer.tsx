@@ -1,3 +1,5 @@
+import { whatsappHref } from "@/lib/site-config";
+
 export function SiteFooter() {
   return (
     <>
@@ -15,7 +17,7 @@ export function SiteFooter() {
       <h3 className="font-headline-lg text-[24px] font-semibold text-white tracking-tight">Pronto para dar o próximo passo?</h3>
       <p className="text-white/50 text-[15px] max-w-md">Uma primeira conversa pode ajudar sua família a entender qual profissional pode orientar melhor esse momento.</p>
       </div>
-      <a href="https://wa.me/5521988451234" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 px-8 h-13 bg-white text-[#005791] font-semibold text-[15px] rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.2)] hover:-translate-y-0.5 transition-all duration-300" style={{ height: "52px" }}>
+      <a href={whatsappHref("Olá, gostaria de mais informações sobre a CRIMAP")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 px-8 h-13 bg-white text-[#005791] font-semibold text-[15px] rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.2)] hover:-translate-y-0.5 transition-all duration-300" style={{ height: "52px" }}>
       <span className="material-symbols-outlined text-[20px]">chat</span>
       Conversar pelo WhatsApp
       </a>
@@ -632,7 +634,7 @@ export function SiteFooter() {
       <h4 className="text-[11px] font-semibold text-white/30 uppercase tracking-[0.12em] mb-5">Contato</h4>
       <ul className="flex flex-col gap-3.5">
       <li><a href="/contato" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Localização e horários</a></li>
-      <li><a href="https://wa.me/5521988451234" target="_blank" rel="noopener noreferrer" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">WhatsApp</a></li>
+      <li><a href={whatsappHref()} target="_blank" rel="noopener noreferrer" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">WhatsApp</a></li>
       <li><a href="https://www.instagram.com/crimaprj/" target="_blank" rel="noopener noreferrer" className="text-[14px] text-white/55 hover:text-white transition-colors duration-200">Instagram</a></li>
       </ul>
       <div className="mt-6 pt-5 border-t border-white/8">

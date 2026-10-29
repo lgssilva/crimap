@@ -118,7 +118,7 @@ export function CareJourney() {
       <p className="font-body-sm text-body-sm text-crimap-gray">Fornecemos laudos terapêuticos completos com CID, plano de metas e evolução periódica para facilitar o processo junto ao seu plano de&nbsp;saúde.</p>
       </div>
       </div>
-      <a className="px-5 h-11 inline-flex items-center justify-center rounded-xl bg-connection-blue text-on-primary font-label-md font-semibold hover:bg-primary transition-colors whitespace-nowrap flex-shrink-0" href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20entender%20como%20funciona%20o%20reembolso%20na%20CRIMAP" rel="noopener noreferrer" target="_blank">
+      <a className="px-5 h-11 inline-flex items-center justify-center rounded-xl bg-connection-blue text-on-primary font-label-md font-semibold hover:bg-primary transition-colors whitespace-nowrap flex-shrink-0" href="https://wa.me/5521990962742?text=Ol%C3%A1%2C%20gostaria%20de%20entender%20como%20funciona%20o%20reembolso%20na%20CRIMAP" rel="noopener noreferrer" target="_blank">
                 Entender Reembolso
               </a>
       </div>

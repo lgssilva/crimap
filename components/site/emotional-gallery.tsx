@@ -119,7 +119,7 @@ export function EmotionalGallery() {
           </div>
           <a
             className="px-6 h-12 inline-flex items-center justify-center rounded-xl bg-vitality-rose text-white font-label-md font-semibold hover:bg-vitality-rose/90 transition-colors whitespace-nowrap flex-shrink-0 gap-2"
-            href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20visita%20%C3%A0%20CRIMAP"
+            href="https://wa.me/5521990962742?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20visita%20%C3%A0%20CRIMAP"
             target="_blank"
             rel="noopener noreferrer"
           >

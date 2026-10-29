@@ -61,7 +61,7 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2 w-full min-w-0">
               <a
                 className="inline-flex items-center justify-center gap-2.5 px-5 sm:px-7 min-h-12 h-auto py-3 sm:h-12 w-full sm:w-auto bg-connection-blue text-on-primary font-label-lg text-label-lg rounded-xl shadow-[0_4px_16px_rgba(0,112,184,0.22)] hover:bg-primary transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-connection-blue text-center"
-                href="https://wa.me/5521988451234?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20acolhimento%20inicial%20na%20CRIMAP"
+                href="https://wa.me/5521990962742?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20acolhimento%20inicial%20na%20CRIMAP"
                 rel="noopener noreferrer"
                 target="_blank"
               >

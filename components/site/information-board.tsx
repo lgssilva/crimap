@@ -96,7 +96,7 @@ export function InformationBoard() {
                   </button>
       <p className="font-label-sm text-label-sm text-center text-crimap-gray">
                     Preferência de contato imediato?<br />
-                    <a className="text-connection-blue underline font-semibold" href="https://wa.me/5521988451234" rel="noopener noreferrer" target="_blank">Chame diretamente no WhatsApp aqui.</a>
+                    <a className="text-connection-blue underline font-semibold" href="https://wa.me/5521990962742" rel="noopener noreferrer" target="_blank">Chame diretamente no WhatsApp aqui.</a>
                   </p>
       </div>
       {/* Success Alert Placeholder */}

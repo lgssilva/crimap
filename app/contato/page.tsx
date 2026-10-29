@@ -10,9 +10,8 @@ export const metadata: Metadata = {
 };
 
 const hours = [
-  { day: "Segunda a Sexta", time: "8h às 19h" },
-  { day: "Sábado", time: "8h às 13h" },
-  { day: "Domingo e Feriados", time: "Fechado" },
+  { day: "Segunda a Sexta", time: "8h às 18h" },
+  { day: "Sábado, Domingo e Feriados", time: "Fechado" },
 ];
 
 export default function ContatoPage() {
@@ -61,6 +60,20 @@ export default function ContatoPage() {
                 <p className="font-label-md text-label-md font-semibold text-ink-deep">WhatsApp</p>
                 <p className="font-body-lg text-body-lg text-progress-green font-semibold">{siteConfig.whatsapp.display}</p>
                 <p className="font-body-sm text-body-sm text-crimap-gray mt-0.5">Resposta rápida em horário comercial</p>
+              </div>
+            </a>
+
+            {/* Email */}
+            <a
+              href={`mailto:${siteConfig.email.value}`}
+              className="flex items-center gap-4 p-5 rounded-2xl bg-canvas-clinical border border-soft-line hover:border-connection-blue/20 transition-colors group"
+            >
+              <div className="w-12 h-12 rounded-xl bg-connection-blue/10 flex items-center justify-center flex-shrink-0">
+                <span className="material-symbols-outlined text-[24px] text-connection-blue">mail</span>
+              </div>
+              <div>
+                <p className="font-label-md text-label-md font-semibold text-ink-deep">E-mail</p>
+                <p className="font-body-lg text-body-lg text-connection-blue font-semibold">{siteConfig.email.value}</p>
               </div>
             </a>
 
